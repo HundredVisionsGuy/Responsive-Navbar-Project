@@ -1,20 +1,45 @@
 body {
     font-size: 125%;
+    color: #484141;
+    background-color: #F2F2F2;
+    font-family: 'PT Sans', sans-serif;
 }
+/* Center all content in the page */
+header, main, footer {
+    width: 40em;
+    max-width: 98%;
+    margin: 0 auto;
+}
+/* style the navbar */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: row;
 }
-nav a {
+nav#menu a {
     text-decoration: none;
     display: block;
+    font-weight: 700;
     padding: 0.5em 1em;
     background-color: #999999;
     color: #101010;
     border: 1px solid black;
 }
-nav a:hover {
-    background-color: #f9f9f9;
+nav#menu a:hover {
+    background-color: #A67356;
+    color: #101010;
+}
+a:link {
+    color: #970FF2;
+}
+a:visited {
+    color: #59098e
+}
+a:hover {
+    color: #2C7F06;
+}
+a:active {
+    color: black;
 }
