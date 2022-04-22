@@ -18,7 +18,7 @@ nav ul {
     display: flex;
     flex-direction: row;
 }
-nav#menu a {
+nav a:link {
     text-decoration: none;
     display: block;
     font-weight: 700;
@@ -27,9 +27,8 @@ nav#menu a {
     color: #101010;
     border: 1px solid black;
 }
-nav#menu a:hover {
+nav a:hover {
     background-color: #A67356;
-    color: #101010;
 }
 a:link {
     color: #970FF2;
@@ -42,4 +41,8 @@ a:hover {
 }
 a:active {
     color: black;
+}
+a.current {
+    background-color: #a38e82;
+    color:#101010;
 }
