@@ -10,6 +10,7 @@ header, main, footer {
     max-width: 98%;
     margin: 0 auto;
 }
+
 /* style the navbar */
 nav ul {
     list-style-type: none;
@@ -20,7 +21,7 @@ nav ul {
     height: 0;
     opacity: 0;
 }
-nav ul.open {
+nav.open ul {
     opacity: 1;
     height: auto;
 }
@@ -58,10 +59,33 @@ a.current {
     'wght' 400,
     'GRAD' 0,
     'opsz' 48
-  }
+}
+
+/* navbar toggle */
+#menu-toggle {
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    transition: all 0.3s;
+}
+#menu-toggle:hover {
+    background-color: #99999973;
+}
+#menu-toggle div {
+    width: 50%;
+    height: 3px;
+    background-color: #101010;
+    margin: 4px auto;
+    transform: translateY(12px);
+}
 /* tablet view and up */
 @media only screen and (min-width: 600px) {
     nav ul {
         flex-direction: row; 
+    }
+    #menu-toggle {
+        opacity: 0;
+        height: 0;
+        width: 0;
     }
 }
