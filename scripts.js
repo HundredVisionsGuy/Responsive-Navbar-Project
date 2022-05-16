@@ -23,6 +23,7 @@ window.onload = function() {
 }
 window.onresize = function() {
     var screenWidth = window.innerWidth;
+    
     var globalNavbar = document.getElementById("global-nav");
     var toggle = document.getElementById("menu-toggle");
 
